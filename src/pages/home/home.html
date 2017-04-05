@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Hello Philippines!
+    </ion-title>
+	<ion-item>
+       <ion-input type="text" value="" [(ngModel)]="message"></ion-input>
+	</ion-item>   
+	<ion-buttons end>
+      <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Me</button>
+	</ion-buttons>  
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	 <div #map id="map"></div> 
+</ion-content>
+
